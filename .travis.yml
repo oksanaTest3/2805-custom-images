@@ -1,13 +1,50 @@
-os: linux
-language: generic
-dist: focal
+jobs:
+  include:
+    - stage: "Test"
+      name: "Use custom image 2305-image3"
+      vm:
+        use:
+          name: 2305-image3
 
-vm:
-  create:
-    name: 2805-image
+    - stage: "Test"
+      name: "Use custom image 2305-image4"
+      vm:
+        use:
+          name: 2305-image4
 
-script:
-  - echo "Creating custom file"
-  - sudo mkdir /my-custom-dir
-  - echo "Test custom image!" | sudo tee /my-custom-dir/my_custom_file.txt
-  - sudo cat /my-custom-dir/my_custom_file.txt
+    - stage: "Test"
+      name: "Use custom image 2305-image5"
+      vm:
+        use:
+          name: 2305-image5
+
+    - stage: "Test"
+      name: "Use custom image 2605-image"
+      vm:
+        use:
+          name: 2605-image
+
+    - stage: "Test"
+      name: "Use custom image 2705-image"
+      vm:
+        use:
+          name: 2705-image
+
+    - stage: "Test"
+      name: "Use custom image 2705-image3"
+      vm:
+        use:
+          name: 2705-image3
+
+    - stage: "Test"
+      name: "Use custom image 2705-image4"
+      vm:
+        use:
+          name: 2705-image4
+
+    - stage: "Test"
+      name: "Use custom image 2705-image5"
+      vm:
+        use:
+          name: 2705-image5
+
