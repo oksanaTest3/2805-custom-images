@@ -11,7 +11,8 @@ jobs:
     - stage: "Test"
       name: "Use custom image test2"
       vm:
-        use: 2605-image3 #non existing image
+        use: 
+          name: 2605-image3 #non existing image
       # script:
       #   - echo "Checking if custom file exists"
       #   - sudo cat /my-custom-dir/my_custom_file.txt
