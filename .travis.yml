@@ -3,5 +3,5 @@ language: generic
 dist: focal
 
 vm:
-  use:
-    name: 2805-image5
+  create:
+    name: 2805-image6
