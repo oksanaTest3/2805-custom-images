@@ -4,4 +4,4 @@ jobs:
       name: "Use custom image 2305-image3"
       vm:
         use:
-          name: 2805-image
+          name: 2605-image2
