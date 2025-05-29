@@ -1,14 +1,20 @@
 jobs:
   include:
     - stage: create image
+      os: linux
+      dist: focal
+      language: generic
       vm:
-        create: 
-          name: 2905-image5
-      script:
-        - exit 1
+        create:
+          name: 2905-image6 #new
+      before_install:
+        - sudo apt-get -y install libxml2-dev
+      addons:
+        apt:
+          update: true
 
     - stage: use custom image
       vm:
-        use: 2905-image5
+        use: 2905-image6
       script:
         - echo "Running job with custom image"
