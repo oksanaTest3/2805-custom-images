@@ -1,12 +1,12 @@
 jobs:
   include:
-    - stage: create image
-      os: linux
-      dist: focal
-      language: generic
-      vm:
-        create: 
-          name: 2905-image
+    # - stage: create image
+    #   os: linux
+    #   dist: focal
+    #   language: generic
+    #   vm:
+    #     create: 
+    #       name: 2905-image
 
     - stage: use custom image
       vm:
