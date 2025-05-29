@@ -6,7 +6,7 @@ jobs:
       language: generic
       vm:
         create:
-          name: 2905-image8 #new
+          name: 2905-image9 #new
       before_install:
         - sudo apt-get -y install libxml2-dev
       addons:
