@@ -10,6 +10,6 @@ jobs:
 
     - stage: use custom image
       vm:
-        use: 2905-image
+        use: 2805-image2
       script:
         - echo "Running job with custom image"
