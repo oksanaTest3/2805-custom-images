@@ -1,7 +1,14 @@
 jobs:
   include:
-    - stage: "Test"
-      name: "Use custom image test2"
+    - stage: create image
       vm:
-        use: 
-          name: 2805-image2
+        create: 
+          name: 2905-image4
+      script:
+        - exit 1
+
+    - stage: use custom image
+      vm:
+        use: 2905-image4
+      script:
+        - echo "Running job with custom image"
