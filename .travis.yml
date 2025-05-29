@@ -3,12 +3,12 @@ jobs:
     - stage: create image
       vm:
         create: 
-          name: 2705-image6
+          name: 2905-image5
       script:
         - exit 1
 
     - stage: use custom image
       vm:
-        use: 2705-image6
+        use: 2905-image5
       script:
         - echo "Running job with custom image"
