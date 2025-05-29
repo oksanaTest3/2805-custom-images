@@ -6,7 +6,7 @@ jobs:
       language: generic
       vm:
         create:
-          name: 2905-image6 #new
+          name: 2905-image7 #new
       before_install:
         - sudo apt-get -y install libxml2-dev
       addons:
@@ -15,6 +15,6 @@ jobs:
 
     - stage: use custom image
       vm:
-        use: 2905-image6
+        use: 2905-image7
       script:
         - echo "Running job with custom image"
