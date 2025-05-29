@@ -1,11 +1,11 @@
 jobs:
   include:
-    - stage: create image
-      vm:
-        create: 
-          name: 2905-image4
-      script:
-        - exit 1
+    # - stage: create image
+    #   vm:
+    #     create: 
+    #       name: 2905-image4
+    #   script:
+    #     - exit 1
 
     - stage: use custom image
       vm:
